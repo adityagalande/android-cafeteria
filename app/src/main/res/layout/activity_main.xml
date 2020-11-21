@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/customerName"
+                style="@style/editText"
+                android:hint="@string/enter_name" />
+
+            <EditText
+                android:id="@+id/customerEmail"
+                style="@style/editText"
+                android:layout_marginTop="3dp"
+                android:hint="@string/enter_email" />
+
+            <TextView
+                style="@style/textViewforItemLable"
+                android:text="@string/breakfast" />
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textViewforItemLable"
+                android:text="@string/beverages" />
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textViewforItemLable"
+                android:text="@string/dessetr" />
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/burger"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_120"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textViewforItemLable"
+                android:text="@string/order_summary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_items"
+                android:padding="4dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layout_bg"
+                android:text="@string/order" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
