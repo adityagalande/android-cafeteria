@@ -33,7 +33,8 @@
                 android:id="@+id/customerEmail"
                 style="@style/editText"
                 android:layout_marginTop="3dp"
-                android:hint="@string/enter_email" />
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress" />
 
             <TextView
                 style="@style/textViewforItemLable"
@@ -71,38 +72,12 @@
 
                 <TextView
                     style="@style/itemName"
-                    android:text="@string/burger"
+                    android:text="@string/garlic_bread"
                     android:textColor="@color/black" />
 
                 <TextView
                     style="@style/itemName"
-                    android:text="@string/_120"
-                    android:textColor="@color/black" />
-
-                <Button
-                    style="@style/plusButton"
-                    android:background="@drawable/layout_bg" />
-
-                <TextView style="@style/quantityText" />
-
-                <Button
-                    style="@style/minusButton"
-                    android:background="@drawable/layout_bg" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                style="@style/itemLinearLayout"
-                android:background="@drawable/layout_bg">
-
-                <TextView
-                    style="@style/itemName"
-                    android:text="@string/burger"
-                    android:textColor="@color/black" />
-
-                <TextView
-                    style="@style/itemName"
-                    android:text="@string/_120"
+                    android:text="@string/_149"
                     android:textColor="@color/black" />
 
                 <Button
@@ -123,12 +98,38 @@
 
                 <TextView
                     style="@style/itemName"
-                    android:text="@string/burger"
+                    android:text="@string/bean_nachos"
                     android:textColor="@color/black" />
 
                 <TextView
                     style="@style/itemName"
-                    android:text="@string/_120"
+                    android:text="@string/_249"
+                    android:textColor="@color/black" />
+
+                <Button
+                    style="@style/plusButton"
+                    android:background="@drawable/layout_bg" />
+
+                <TextView style="@style/quantityText" />
+
+                <Button
+                    style="@style/minusButton"
+                    android:background="@drawable/layout_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/itemLinearLayout"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/greek_salad"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/itemName"
+                    android:text="@string/_329"
                     android:textColor="@color/black" />
 
                 <Button
@@ -307,6 +308,39 @@
 
             </LinearLayout>
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="@string/dine_in"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="@string/take_away"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="@string/delivery"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
             <TextView
                 style="@style/textViewforItemLable"
                 android:text="@string/order_summary" />
@@ -318,7 +352,7 @@
                 android:padding="4dp" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="7dp"
