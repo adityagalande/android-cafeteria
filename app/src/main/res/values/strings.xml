@@ -13,4 +13,13 @@
     <string name="select_items">Select items!!</string>
     <string name="burger">Burger</string>
     <string name="_120">120 ₹</string>
+    <string name="take_away">Take-Away</string>
+    <string name="dine_in">Dine-in</string>
+    <string name="delivery">Delivery</string>
+    <string name="garlic_bread">Garlic Bread</string>
+    <string name="_149">149 ₹</string>
+    <string name="bean_nachos">Bean Nachos</string>
+    <string name="_249">249 ₹</string>
+    <string name="greek_salad">Greek Salad</string>
+    <string name="_329">329 ₹</string>
 </resources>
