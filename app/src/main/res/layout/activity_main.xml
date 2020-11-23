@@ -55,12 +55,16 @@
                     android:textColor="@color/black" />
 
                 <Button
+                    android:onClick="burgerPlus"
                     style="@style/plusButton"
                     android:background="@drawable/layout_bg" />
 
-                <TextView style="@style/quantityText" />
+                <TextView
+                    android:id="@+id/burgerQTT"
+                    style="@style/quantityText" />
 
                 <Button
+                    android:onClick="burgerMinus"
                     style="@style/minusButton"
                     android:background="@drawable/layout_bg" />
 
@@ -81,12 +85,16 @@
                     android:textColor="@color/black" />
 
                 <Button
+                    android:onClick="garlicPlus"
                     style="@style/plusButton"
                     android:background="@drawable/layout_bg" />
 
-                <TextView style="@style/quantityText" />
+                <TextView
+                    android:id="@+id/garlicQTT"
+                    style="@style/quantityText" />
 
                 <Button
+                    android:onClick="garlicMinus"
                     style="@style/minusButton"
                     android:background="@drawable/layout_bg" />
 
@@ -346,9 +354,10 @@
                 android:text="@string/order_summary" />
 
             <TextView
+                android:id="@+id/selectItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/select_items"
+                android:text="@string/select_items"
                 android:padding="4dp" />
 
             <Button
