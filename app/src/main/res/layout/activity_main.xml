@@ -55,18 +55,18 @@
                     android:textColor="@color/black" />
 
                 <Button
-                    android:onClick="burgerPlus"
                     style="@style/plusButton"
-                    android:background="@drawable/layout_bg" />
+                    android:background="@drawable/layout_bg"
+                    android:onClick="burgerPlus" />
 
                 <TextView
                     android:id="@+id/burgerQTT"
                     style="@style/quantityText" />
 
                 <Button
-                    android:onClick="burgerMinus"
                     style="@style/minusButton"
-                    android:background="@drawable/layout_bg" />
+                    android:background="@drawable/layout_bg"
+                    android:onClick="burgerMinus" />
 
             </LinearLayout>
 
@@ -85,18 +85,18 @@
                     android:textColor="@color/black" />
 
                 <Button
-                    android:onClick="garlicPlus"
                     style="@style/plusButton"
-                    android:background="@drawable/layout_bg" />
+                    android:background="@drawable/layout_bg"
+                    android:onClick="garlicPlus" />
 
                 <TextView
                     android:id="@+id/garlicQTT"
                     style="@style/quantityText" />
 
                 <Button
-                    android:onClick="garlicMinus"
                     style="@style/minusButton"
-                    android:background="@drawable/layout_bg" />
+                    android:background="@drawable/layout_bg"
+                    android:onClick="garlicMinus" />
 
             </LinearLayout>
 
@@ -115,18 +115,18 @@
                     android:textColor="@color/black" />
 
                 <Button
-                    android:onClick="nachosPlus"
                     style="@style/plusButton"
-                    android:background="@drawable/layout_bg" />
+                    android:background="@drawable/layout_bg"
+                    android:onClick="nachosPlus" />
 
                 <TextView
                     android:id="@+id/nachosQTT"
                     style="@style/quantityText" />
 
                 <Button
-                    android:onClick="nachosMinus"
                     style="@style/minusButton"
-                    android:background="@drawable/layout_bg" />
+                    android:background="@drawable/layout_bg"
+                    android:onClick="nachosMinus" />
 
             </LinearLayout>
 
@@ -145,18 +145,18 @@
                     android:textColor="@color/black" />
 
                 <Button
-                    android:onClick="saladPlus"
                     style="@style/plusButton"
-                    android:background="@drawable/layout_bg" />
+                    android:background="@drawable/layout_bg"
+                    android:onClick="saladPlus" />
 
                 <TextView
                     android:id="@+id/saladQTT"
                     style="@style/quantityText" />
 
                 <Button
-                    android:onClick="saladMinus"
                     style="@style/minusButton"
-                    android:background="@drawable/layout_bg" />
+                    android:background="@drawable/layout_bg"
+                    android:onClick="saladMinus" />
 
             </LinearLayout>
 
@@ -365,17 +365,17 @@
                 android:id="@+id/selectItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/select_items"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:text="@string/select_items" />
 
             <Button
-                android:onClick="Order"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="7dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/layout_bg"
+                android:onClick="Order"
                 android:text="@string/order" />
 
         </LinearLayout>
