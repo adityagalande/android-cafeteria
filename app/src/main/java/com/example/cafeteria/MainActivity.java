@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private int garlicQuantity = 0;
     private int nachosQuantity = 0;
     private int saladQuantity = 0;
+    private int lemonteaQuantity = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         BurgerQuantity--;
         if (BurgerQuantity < 0) {
             BurgerQuantity = 0;
-            Toast.makeText(this,"Unable to select!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Unable to select!", Toast.LENGTH_SHORT).show();
             selectItem("Name : " + nameText() + "\nE-main : " + emailText());
         } else {
             burgerQTT(BurgerQuantity);
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         garlicQuantity--;
         if (garlicQuantity < 0) {
             garlicQuantity = 0;
-            Toast.makeText(this,"Unable to select!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Unable to select!", Toast.LENGTH_SHORT).show();
             selectItem("Name : " + nameText() + "\nE-main : " + emailText());
         } else {
             garlicQTT(garlicQuantity);
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         nachosQuantity--;
         if (nachosQuantity < 0) {
             nachosQuantity = 0;
-            Toast.makeText(this,"Unable to select!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Unable to select!", Toast.LENGTH_SHORT).show();
             nachosQTT(nachosQuantity);
             selectItem("Name : " + nameText() + "\nE-main : " + emailText());
         } else {
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         saladQuantity--;
         if (saladQuantity < 0) {
             saladQuantity = 0;
-            Toast.makeText(this,"Unable to select!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Unable to select!", Toast.LENGTH_SHORT).show();
             saladQTT(saladQuantity);
             selectItem("Name : " + nameText() + "\nE-main : " + emailText());
         } else {
@@ -138,6 +139,33 @@ public class MainActivity extends AppCompatActivity {
         saladQtt.setText(" " + saladQuantity);
     }
 
+    //This for Lemon Tea-------------------------------------------------
+
+    public void lemonteaPlus(View view) {
+        lemonteaQuantity++;
+        lemonteaQTT(lemonteaQuantity);
+        selectItem("Name : " + nameText() + "\nE-main : " + emailText());
+    }
+
+    public void lemonteaMinus(View view) {
+        lemonteaQuantity--;
+        if (lemonteaQuantity < 0) {
+            lemonteaQuantity = 0;
+            Toast.makeText(this,"Unable to select!",Toast.LENGTH_SHORT).show();
+            lemonteaQTT(lemonteaQuantity);
+            selectItem("Name : " + nameText() + "\nE-main : " + emailText());
+        } else {
+            lemonteaQTT(lemonteaQuantity);
+            selectItem("Name : " + nameText() + "\nE-main : " + emailText());
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private void lemonteaQTT(int lemonteaQuantity) {
+        TextView lemonteaQtt = (TextView) findViewById(R.id.lemonteaQTT);
+        lemonteaQtt.setText(" " + lemonteaQuantity);
+
+    }
 
     //This for Order Summary---------------------------------------------
     @SuppressLint("SetTextI18n")
@@ -152,11 +180,19 @@ public class MainActivity extends AppCompatActivity {
         int garlicPrice = garlicQuantity * 149;
         int nachosPrice = nachosQuantity * 249;
         int saladPrice = saladQuantity * 329;
-        totalPrice = burgerPrice + garlicPrice + nachosPrice + saladPrice;
+        int lemonteaPrice = lemonteaQuantity * 25;
+        totalPrice = burgerPrice + garlicPrice + nachosPrice + saladPrice + lemonteaPrice;
 
         quantity += BurgerQuantity;
 
-        String msg = "Name : " + nameText() + "\nE-main : " + emailText() + "\nBurger : " + BurgerQuantity + "\nGarlic Bread : " + garlicQuantity + "\nBean Nachos : " + nachosQuantity + "\nGreek Salad : " + saladQuantity + "\nTotal : " + totalPrice;
-        selectItem(msg);
+        String msg = "Name : " + nameText() + "\nE-main : " + emailText() + "\nBurger : " + BurgerQuantity + "\nGarlic Bread : " + garlicQuantity + "\nBean Nachos : " + nachosQuantity + "\nGreek Salad : " + saladQuantity + "\nLemon Tea : " + lemonteaQuantity + "\nTotal : " + totalPrice;
+
+        if (totalPrice <= 0) {
+            msg = "Cart is Empty!!";
+            Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+            selectItem(msg);
+        } else {
+            selectItem(msg);
+        }
     }
 }
